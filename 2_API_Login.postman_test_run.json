@@ -1,0 +1,191 @@
+{
+	"id": "d9f7bffb-bb66-4e34-9c04-540ae65ec906",
+	"name": "2_API_Login",
+	"timestamp": "2024-07-02T23:33:50.343Z",
+	"collection_id": "30693323-58d1b39f-9313-4189-86b2-e592937fbd0f",
+	"folder_id": 0,
+	"environment_id": "30693323-138832f6-98e9-4880-b924-b7453b44d390",
+	"totalPass": 12,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-02T23:33:40.899Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a8d669f3-757f-4565-86f1-219029e83fdb",
+			"name": "Criar Usuário",
+			"url": "http://localhost:3000/usuarios",
+			"time": 44,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Check presence of ID field": true,
+				"Validate saved User ID": true,
+				"Status code is 201 created": true,
+				"Validate sucess message": true,
+				"Validate Id is not Null": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Check presence of ID field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate saved User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Id is not Null": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				44
+			],
+			"allTests": [
+				{
+					"Check presence of ID field": true,
+					"Validate saved User ID": true,
+					"Status code is 201 created": true,
+					"Validate sucess message": true,
+					"Validate Id is not Null": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "209c7ee9-92c0-4679-8914-78441d721b53",
+			"name": "Realizar login com sucesso",
+			"url": "http://localhost:3000/login",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate Login Message": true,
+				"Validate Saved Token": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Validate Login Message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Saved Token": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Validate Login Message": true,
+					"Validate Saved Token": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "a18ef0f0-19c7-4660-b367-62cf79551968",
+			"name": "Deletar usuário",
+			"url": "http://localhost:3000/usuarios/sFRIMx6R1yXKEO7V",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Validate sucess message": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Validate sucess message": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "3d3aa1e6-d7ab-49ae-be95-47d01dd13e1b",
+			"name": "Validação login excluído",
+			"url": "http://localhost:3000/login",
+			"time": 7,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 77,
+	"collection": {
+		"requests": [
+			{
+				"id": "a8d669f3-757f-4565-86f1-219029e83fdb",
+				"method": "POST"
+			},
+			{
+				"id": "209c7ee9-92c0-4679-8914-78441d721b53",
+				"method": "POST"
+			},
+			{
+				"id": "a18ef0f0-19c7-4660-b367-62cf79551968",
+				"method": "DELETE"
+			},
+			{
+				"id": "3d3aa1e6-d7ab-49ae-be95-47d01dd13e1b",
+				"method": "POST"
+			}
+		]
+	}
+}

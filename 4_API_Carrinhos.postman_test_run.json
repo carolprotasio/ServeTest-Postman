@@ -1,0 +1,651 @@
+{
+	"id": "bf68fdd1-06f0-40ba-b54f-c7ad5446165d",
+	"name": "4_API_Carrinhos",
+	"timestamp": "2024-07-02T23:37:29.569Z",
+	"collection_id": "30693323-25623eea-ae08-4721-9c7d-ac2028f2df5a",
+	"folder_id": 0,
+	"environment_id": "30693323-138832f6-98e9-4880-b924-b7453b44d390",
+	"totalPass": 47,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-02T23:37:25.216Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b68cebb2-1eea-46d3-b445-1c5b8e52b6eb",
+			"name": "Criar Usuário",
+			"url": "http://localhost:3000/usuarios",
+			"time": 43,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Check presence of ID field": true,
+				"Validate saved User ID": true,
+				"Status code is 201 created": true,
+				"Validate sucess message": true,
+				"Validate Id is not Null": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Check presence of ID field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate saved User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Id is not Null": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Check presence of ID field": true,
+					"Validate saved User ID": true,
+					"Status code is 201 created": true,
+					"Validate sucess message": true,
+					"Validate Id is not Null": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "92e07d44-e5c9-46ed-bd76-3831bc8d3830",
+			"name": "Realizar login com sucesso",
+			"url": "http://localhost:3000/login",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate Login message": true,
+				"Validate saved Token": true,
+				"Response time is less than 200ms": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Validate Login message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate saved Token": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Validate Login message": true,
+					"Validate saved Token": true,
+					"Response time is less than 200ms": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8b3235f6-ffdd-4762-a892-de9593e39ba8",
+			"name": "Criar Produto 1",
+			"url": "http://localhost:3000/produtos",
+			"time": 9,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Validate Created Product message": true,
+				"Validate product ID": true,
+				"Response time is less than 200ms": true,
+				"Status code is 201 Created": true
+			},
+			"testPassFailCounts": {
+				"Validate Created Product message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate product ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Validate Created Product message": true,
+					"Validate product ID": true,
+					"Response time is less than 200ms": true,
+					"Status code is 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "4839c6fb-d45d-4249-bc94-3746157d0198",
+			"name": "Criar Produto 2",
+			"url": "http://localhost:3000/produtos",
+			"time": 9,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Validate Created Product message": true,
+				"Validate product ID": true,
+				"Response time is less than 200ms": true,
+				"Status code is 201 Created": true
+			},
+			"testPassFailCounts": {
+				"Validate Created Product message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate product ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Validate Created Product message": true,
+					"Validate product ID": true,
+					"Response time is less than 200ms": true,
+					"Status code is 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "52dc4fd7-147a-4972-a5a6-b004f266594b",
+			"name": "1 - Cadastrar Produto no Carrinho",
+			"url": "http://localhost:3000/carrinhos?quantidadeTotal=1",
+			"time": 18,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Validate Created Carrinho message": true,
+				"Validate Carrinho ID": true,
+				"Response time is less than 200ms": true,
+				"Status code is 201 Created": true
+			},
+			"testPassFailCounts": {
+				"Validate Created Carrinho message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Carrinho ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Validate Created Carrinho message": true,
+					"Validate Carrinho ID": true,
+					"Response time is less than 200ms": true,
+					"Status code is 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "58ebea5d-5610-4e7e-90af-aba9cadb55ae",
+			"name": "2 - Buscar Carrinho por ID",
+			"url": "http://localhost:3000/carrinhos/MUyGaYoYMP6jazTd",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validade Products Ids 1": true,
+				"Validade Products Ids 2": true,
+				"Response time is less than 200ms": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Validade Products Ids 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validade Products Ids 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Validade Products Ids 1": true,
+					"Validade Products Ids 2": true,
+					"Response time is less than 200ms": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "124e42f8-dff3-4daf-84d6-1fc18ed01946",
+			"name": "3 - Excluir Carrinho - Realizar Compra",
+			"url": "http://localhost:3000/carrinhos/concluir-compra",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "73e9ce7b-3523-47cb-badf-d128ed61e28c",
+			"name": "Buscar Produto por ID _Produto 1",
+			"url": "http://localhost:3000/produtos/HwAFRetMEN8nXrNY",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validade Products Ids 1": true,
+				"Validade Products Name": true,
+				"Response time is less than 200ms": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Validade Products Ids 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validade Products Name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Validade Products Ids 1": true,
+					"Validade Products Name": true,
+					"Response time is less than 200ms": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "376c7b6e-7914-4cff-b8cd-426b92596fd3",
+			"name": "Buscar Produto por ID _Produto 2",
+			"url": "http://localhost:3000/produtos/UQvXB6F5WlP9SQUc",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validade Products Ids 1": true,
+				"Validade Products Name": true,
+				"Response time is less than 200ms": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Validade Products Ids 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validade Products Name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Validade Products Ids 1": true,
+					"Validade Products Name": true,
+					"Response time is less than 200ms": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b6cfebd4-16e3-400f-8709-c5b9709c24a7",
+			"name": "Buscar Produto Produto 1 depois de excluído a compra -Reabastece a quantidade",
+			"url": "http://localhost:3000/produtos/HwAFRetMEN8nXrNY",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "6b063993-72ac-4894-be10-15d8e5a361e3",
+			"name": "Buscar Produto Produto 2 depois de excluído",
+			"url": "http://localhost:3000/produtos/UQvXB6F5WlP9SQUc",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5db56767-dcef-492c-b700-212cc93f81c6",
+			"name": "Deletar produto 1",
+			"url": "http://localhost:3000/produtos/HwAFRetMEN8nXrNY",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validade product 1 deletion": true,
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Validade product 1 deletion": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Validade product 1 deletion": true,
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "4bcbdcb7-fe84-4c5a-b769-843270c3947b",
+			"name": "Deletar produto 2",
+			"url": "http://localhost:3000/produtos/UQvXB6F5WlP9SQUc",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validade product 1 deletion": true,
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Validade product 1 deletion": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Validade product 1 deletion": true,
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "9897ae53-4b70-40db-9fb5-25c186b3219e",
+			"name": "Deletar usuário",
+			"url": "http://localhost:3000/usuarios/Z6hiVmRNOQoFwYlX",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Response time is less than 200ms": true,
+				"Validate sucess message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Response time is less than 200ms": true,
+					"Validate sucess message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 166,
+	"collection": {
+		"requests": [
+			{
+				"id": "b68cebb2-1eea-46d3-b445-1c5b8e52b6eb",
+				"method": "POST"
+			},
+			{
+				"id": "92e07d44-e5c9-46ed-bd76-3831bc8d3830",
+				"method": "POST"
+			},
+			{
+				"id": "8b3235f6-ffdd-4762-a892-de9593e39ba8",
+				"method": "POST"
+			},
+			{
+				"id": "4839c6fb-d45d-4249-bc94-3746157d0198",
+				"method": "POST"
+			},
+			{
+				"id": "52dc4fd7-147a-4972-a5a6-b004f266594b",
+				"method": "POST"
+			},
+			{
+				"id": "58ebea5d-5610-4e7e-90af-aba9cadb55ae",
+				"method": "GET"
+			},
+			{
+				"id": "124e42f8-dff3-4daf-84d6-1fc18ed01946",
+				"method": "DELETE"
+			},
+			{
+				"id": "73e9ce7b-3523-47cb-badf-d128ed61e28c",
+				"method": "GET"
+			},
+			{
+				"id": "376c7b6e-7914-4cff-b8cd-426b92596fd3",
+				"method": "GET"
+			},
+			{
+				"id": "b6cfebd4-16e3-400f-8709-c5b9709c24a7",
+				"method": "GET"
+			},
+			{
+				"id": "6b063993-72ac-4894-be10-15d8e5a361e3",
+				"method": "GET"
+			},
+			{
+				"id": "5db56767-dcef-492c-b700-212cc93f81c6",
+				"method": "DELETE"
+			},
+			{
+				"id": "4bcbdcb7-fe84-4c5a-b769-843270c3947b",
+				"method": "DELETE"
+			},
+			{
+				"id": "9897ae53-4b70-40db-9fb5-25c186b3219e",
+				"method": "DELETE"
+			}
+		]
+	}
+}

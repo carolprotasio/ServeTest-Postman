@@ -1,0 +1,279 @@
+{
+	"id": "765fe1b5-6a4a-422d-a064-2c92dbb35284",
+	"name": "1_API_Usuários",
+	"timestamp": "2024-07-02T23:20:25.827Z",
+	"collection_id": "30693323-f06f822e-7cf9-4f27-bfea-1d68b8805815",
+	"folder_id": 0,
+	"environment_id": "30693323-138832f6-98e9-4880-b924-b7453b44d390",
+	"totalPass": 23,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-02T23:20:24.977Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b72e2365-0d10-45dd-8613-13acc19c227e",
+			"name": "C - Criar Usuário",
+			"url": "http://localhost:3000/usuarios",
+			"time": 17,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Check presence of ID field": true,
+				"Validate saved User ID": true,
+				"Status code is 201 created": true,
+				"Validate sucess message": true,
+				"Validate Id is not Null": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Check presence of ID field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate saved User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Id is not Null": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Check presence of ID field": true,
+					"Validate saved User ID": true,
+					"Status code is 201 created": true,
+					"Validate sucess message": true,
+					"Validate Id is not Null": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "e4ac89cc-7d45-41b8-8429-58c832b83aff",
+			"name": "U - Atualizar Usuário",
+			"url": "http://localhost:3000/usuarios/ycpf3xfG65E1c0iT",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Response time is less than 200ms": true,
+				"Validate sucess message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Response time is less than 200ms": true,
+					"Validate sucess message": true
+				}
+			]
+		},
+		{
+			"id": "b013d8d8-caad-4dfe-bc74-0dabfb10d0ac",
+			"name": "____checar nome alterado",
+			"url": "http://localhost:3000/usuarios/ycpf3xfG65E1c0iT",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate status code 200": true,
+				"Validate Product Updated Field => Nome": true,
+				"Validate Product Update Field => Email": true,
+				"Validate Product Update Field => Senha": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Validate status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Updated Field => Nome": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Update Field => Email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Update Field => Senha": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Validate status code 200": true,
+					"Validate Product Updated Field => Nome": true,
+					"Validate Product Update Field => Email": true,
+					"Validate Product Update Field => Senha": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "b19e85b7-b060-4014-a403-7acfd71d4514",
+			"name": "R - Buscar usuário por ID",
+			"url": "http://localhost:3000/usuarios/ycpf3xfG65E1c0iT",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Response time is less than 200ms": true,
+				"Check presence of fields": true,
+				"Check data types": true,
+				"Check ADM field value": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check presence of fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check data types": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check ADM field value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Response time is less than 200ms": true,
+					"Check presence of fields": true,
+					"Check data types": true,
+					"Check ADM field value": true
+				}
+			]
+		},
+		{
+			"id": "e8955156-5fd6-47bb-ad89-15fbc8395d91",
+			"name": "D - Deletar usuário",
+			"url": "http://localhost:3000/usuarios/ycpf3xfG65E1c0iT",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Response time is less than 200ms": true,
+				"Validate sucess message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Response time is less than 200ms": true,
+					"Validate sucess message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 43,
+	"collection": {
+		"requests": [
+			{
+				"id": "b72e2365-0d10-45dd-8613-13acc19c227e",
+				"method": "POST"
+			},
+			{
+				"id": "e4ac89cc-7d45-41b8-8429-58c832b83aff",
+				"method": "PUT"
+			},
+			{
+				"id": "b013d8d8-caad-4dfe-bc74-0dabfb10d0ac",
+				"method": "GET"
+			},
+			{
+				"id": "b19e85b7-b060-4014-a403-7acfd71d4514",
+				"method": "GET"
+			},
+			{
+				"id": "e8955156-5fd6-47bb-ad89-15fbc8395d91",
+				"method": "DELETE"
+			}
+		]
+	}
+}

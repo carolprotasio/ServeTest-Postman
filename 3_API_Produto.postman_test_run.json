@@ -1,0 +1,438 @@
+{
+	"id": "a6cfb2d1-342d-40d1-b20f-3bf7837064a2",
+	"name": "3_API_Produto",
+	"timestamp": "2024-07-02T23:35:13.025Z",
+	"collection_id": "30693323-728c3c54-a6f9-44be-8fbb-24bd1cde20d6",
+	"folder_id": 0,
+	"environment_id": "30693323-138832f6-98e9-4880-b924-b7453b44d390",
+	"totalPass": 37,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-02T23:35:08.888Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "32ca4533-19cc-4b80-979a-73893c6d15e9",
+			"name": "Criar Usuário",
+			"url": "http://localhost:3000/usuarios",
+			"time": 21,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Check presence of ID field": true,
+				"Validate saved User ID": true,
+				"Status code is 201 created": true,
+				"Validate sucess message": true,
+				"Validate Id is not Null": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Check presence of ID field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate saved User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Id is not Null": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Check presence of ID field": true,
+					"Validate saved User ID": true,
+					"Status code is 201 created": true,
+					"Validate sucess message": true,
+					"Validate Id is not Null": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "94859335-5387-4141-9445-3803247a37fa",
+			"name": "Realizar login com sucesso",
+			"url": "http://localhost:3000/login",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate sucess message": true,
+				"Validate saved AUTH Token": true,
+				"Response time is less than 200ms": true,
+				"Validade logim message": true,
+				"Validade saved authorization Token": true
+			},
+			"testPassFailCounts": {
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate saved AUTH Token": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validade logim message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validade saved authorization Token": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Validate sucess message": true,
+					"Validate saved AUTH Token": true,
+					"Response time is less than 200ms": true,
+					"Validade logim message": true,
+					"Validade saved authorization Token": true
+				}
+			]
+		},
+		{
+			"id": "6039dfa9-7669-4b12-ad21-564891626fc4",
+			"name": "C - Criar Produto",
+			"url": "http://localhost:3000/produtos",
+			"time": 13,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Check presence of ID field": true,
+				"Validate saved User ID": true,
+				"Status code is 201 created": true,
+				"Validate success message": true,
+				"Validate Id is not Null": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Check presence of ID field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate saved User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate success message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Id is not Null": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Check presence of ID field": true,
+					"Validate saved User ID": true,
+					"Status code is 201 created": true,
+					"Validate success message": true,
+					"Validate Id is not Null": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "cf20476c-d337-40f0-bf8a-0ddd60267928",
+			"name": "R - Buscar Produto por ID",
+			"url": "http://localhost:3000/produtos/1Zz3UWkqFhCPxlX5",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Response time is less than 200ms": true,
+				"Check presence of fields": true,
+				"Validate Product Updated Field => Nome": true,
+				"Validate Product Updated Field => Preço": true,
+				"Validate Product Updated Field => Descrição": true,
+				"Validate Product Updated Field => Quantidade": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check presence of fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Updated Field => Nome": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Updated Field => Preço": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Updated Field => Descrição": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Updated Field => Quantidade": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Response time is less than 200ms": true,
+					"Check presence of fields": true,
+					"Validate Product Updated Field => Nome": true,
+					"Validate Product Updated Field => Preço": true,
+					"Validate Product Updated Field => Descrição": true,
+					"Validate Product Updated Field => Quantidade": true
+				}
+			]
+		},
+		{
+			"id": "00c03180-d98b-4035-acb6-cde0a5875085",
+			"name": "U - Alterar Produto",
+			"url": "http://localhost:3000/produtos/1Zz3UWkqFhCPxlX5",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validade Update message": true,
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Validade Update message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Validade Update message": true,
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "63318cca-0bc9-424b-bc60-d70cbc4c2575",
+			"name": "____checar produto alterado",
+			"url": "http://localhost:3000/produtos/1Zz3UWkqFhCPxlX5",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate status code 200": true,
+				"Validate Product Updated Field => Nome": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Validate status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Product Updated Field => Nome": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Validate status code 200": true,
+					"Validate Product Updated Field => Nome": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "3d16fa95-88e2-4df6-8d43-8f09f5b2424d",
+			"name": "D - Deletar produto",
+			"url": "http://localhost:3000/produtos/1Zz3UWkqFhCPxlX5",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Validate success message": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate success message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Validate success message": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "5a1d64a4-9a78-4c45-b041-d6dbf3b01df4",
+			"name": "Deletar usuário",
+			"url": "http://localhost:3000/usuarios/AfPdhgeDWti2aSme",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 OK": true,
+				"Response time is less than 200ms": true,
+				"Validate sucess message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate sucess message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200 OK": true,
+					"Response time is less than 200ms": true,
+					"Validate sucess message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 73,
+	"collection": {
+		"requests": [
+			{
+				"id": "32ca4533-19cc-4b80-979a-73893c6d15e9",
+				"method": "POST"
+			},
+			{
+				"id": "94859335-5387-4141-9445-3803247a37fa",
+				"method": "POST"
+			},
+			{
+				"id": "6039dfa9-7669-4b12-ad21-564891626fc4",
+				"method": "POST"
+			},
+			{
+				"id": "cf20476c-d337-40f0-bf8a-0ddd60267928",
+				"method": "GET"
+			},
+			{
+				"id": "00c03180-d98b-4035-acb6-cde0a5875085",
+				"method": "PUT"
+			},
+			{
+				"id": "63318cca-0bc9-424b-bc60-d70cbc4c2575",
+				"method": "GET"
+			},
+			{
+				"id": "3d16fa95-88e2-4df6-8d43-8f09f5b2424d",
+				"method": "DELETE"
+			},
+			{
+				"id": "5a1d64a4-9a78-4c45-b041-d6dbf3b01df4",
+				"method": "DELETE"
+			}
+		]
+	}
+}
