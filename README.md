@@ -12,6 +12,11 @@ O objetivo deste projeto é garantir que todos os endpoints da API ServeRest fun
 - **Newman**: CLI do Postman para a execução de coleções de teste de API.
 - **ServeRest API**: API utilizada para a realização dos testes.
 
+## Swagger 
+#### [Swagger do projeto](https://serverest.dev/#)
+
+  ![Swagger ServeRest](https://github.com/carolprotasio/ServeTest-Postman/blob/main/swagger.png)
+
 ## Estrutura do Projeto
 
 ### 1. API Usuários
